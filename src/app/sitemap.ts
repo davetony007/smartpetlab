@@ -1,56 +1,57 @@
 import { MetadataRoute } from "next";
+import fs from "fs";
+import path from "path";
+import { products } from "@/data/products";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = "https://smartpetlab.vercel.app";
 
-    return [
-        {
-            url: baseUrl,
-            lastModified: new Date(),
-            changeFrequency: "daily",
-            priority: 1,
-        },
-        {
-            url: `${baseUrl}/reviews`,
-            lastModified: new Date(),
-            changeFrequency: "daily",
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/comparisons`,
-            lastModified: new Date(),
-            changeFrequency: "weekly",
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/guides`,
-            lastModified: new Date(),
-            changeFrequency: "weekly",
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/blog`,
-            lastModified: new Date(),
-            changeFrequency: "daily",
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/about`,
-            lastModified: new Date(),
-            changeFrequency: "monthly",
-            priority: 0.5,
-        },
-        {
-            url: `${baseUrl}/privacy`,
-            lastModified: new Date(),
-            changeFrequency: "yearly",
-            priority: 0.3,
-        },
-        {
-            url: `${baseUrl}/terms`,
-            lastModified: new Date(),
-            changeFrequency: "yearly",
-            priority: 0.3,
-        },
-    ];
+    // 1. Static Routes
+    const staticRoutes = [
+        "",
+        "/reviews",
+        "/comparisons",
+        "/guides",
+        "/blog",
+        "/about",
+        "/privacy",
+        "/terms",
+    ].map((route) => ({
+        url: `${baseUrl}${route}`,
+        lastModified: new Date(),
+        changeFrequency: "daily" as const,
+        priority: route === "" ? 1 : 0.8,
+    }));
+
+    // 2. Dynamic Guides (from filesystem)
+    const guidesDirectory = path.join(process.cwd(), "src/app/guides");
+    let guideRoutes: MetadataRoute.Sitemap = [];
+
+    try {
+        if (fs.existsSync(guidesDirectory)) {
+            const guideFolders = fs.readdirSync(guidesDirectory).filter((file) => {
+                const filePath = path.join(guidesDirectory, file);
+                return fs.statSync(filePath).isDirectory();
+            });
+
+            guideRoutes = guideFolders.map((slug) => ({
+                url: `${baseUrl}/guides/${slug}`,
+                lastModified: new Date(),
+                changeFrequency: "weekly" as const,
+                priority: 0.9,
+            }));
+        }
+    } catch (error) {
+        console.error("Error reading guides directory for sitemap:", error);
+    }
+
+    // 3. Dynamic Reviews (from data/products.ts)
+    const reviewRoutes = products.map((product) => ({
+        url: `${baseUrl}/reviews/${product.id}`,
+        lastModified: new Date(),
+        changeFrequency: "weekly" as const,
+        priority: 0.9,
+    }));
+
+    return [...staticRoutes, ...guideRoutes, ...reviewRoutes];
 }
