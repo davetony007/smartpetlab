@@ -13,8 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://smartpetlab.vercel.app"),
   title: "SmartPetLab | High-Tech Pet Care Reviews",
   description: "Expert reviews and guides on the latest smart pet technology, GPS trackers, automatic feeders, and wellness gadgets.",
+  verification: {
+    google: "e22Me2xmW74B2UEGaXRO-y9IzQy0t3NA8Dcd2Ub7DTw",
+  },
 };
 
 import { Navbar } from "@/components/Navbar";
@@ -26,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

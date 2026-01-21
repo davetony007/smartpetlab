@@ -3,6 +3,8 @@ import { Star, ShieldCheck, ArrowRight, Check, X, Info, Activity, Battery, Signa
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { StickyCTA } from "@/components/StickyCTA";
+import { JsonLd } from "@/components/JsonLd";
 
 interface Props {
     params: Promise<{
@@ -37,6 +39,12 @@ export default async function ProductReviewPage({ params }: Props) {
 
     return (
         <article className="min-h-screen bg-zinc-50 pb-24 dark:bg-black">
+            <JsonLd product={product} />
+            <StickyCTA
+                price={product.price}
+                productName={product.name}
+                amazonUrl={product.amazonUrl}
+            />
             {/* 1. HERO SECTION */}
             <div className="bg-white border-b border-zinc-200 dark:bg-zinc-900/50 dark:border-zinc-800">
                 <div className="mx-auto max-w-6xl px-6 py-12">

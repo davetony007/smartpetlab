@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { BookOpen, ArrowRight, Shield, Zap } from "lucide-react";
 
 export const metadata = {
@@ -30,6 +31,54 @@ const guides = [
         category: "Security & Privacy",
         readTime: "6 min read",
         image: "/images/products/furbo-360.jpg",
+    },
+    {
+        slug: "smart-tech-separation-anxiety",
+        title: "Smart Tech for Separation Anxiety: Help Your Dog Relax",
+        excerpt: "Tech can't cure anxiety, but it can help. We test calming playlists, interactive toys, and two-way audio cameras.",
+        category: "Wellness",
+        readTime: "7 min read",
+        image: "/images/products/wickedbone.jpg",
+    },
+    {
+        slug: "smart-litter-box-review-2026",
+        title: "Smart Litter Boxes: Are They Worth $700?",
+        excerpt: "We tested the Litter-Robot 4 and PetKit Pura Max. Are they odor-free miracles or just overpriced toilets?",
+        category: "Hygiene",
+        readTime: "14 min read",
+        image: "/images/products/litter-robot-4.jpg",
+    },
+    {
+        slug: "smart-water-fountains-kidney-health",
+        title: "Cat Hydration & Kidney Health: Smart Fountains Guide",
+        excerpt: "Kidney disease is a silent killer. Learn how stainless steel smart fountains can encourage your cat to drink more.",
+        category: "Health",
+        readTime: "10 min read",
+        image: "/images/products/petlibro-dockstream.jpg",
+    },
+    {
+        slug: "microchip-dog-doors-security",
+        title: "Microchip Pet Doors: Security & Energy Savings",
+        excerpt: "Stop raccoons and stray cats from entering your home. We review the best app-controlled microchip doors.",
+        category: "Home",
+        readTime: "8 min read",
+        image: "/images/products/sureflap-connect.jpg",
+    },
+    {
+        slug: "wearable-pet-health-monitors",
+        title: "Wearable Health Monitors: Beyond GPS Tracking",
+        excerpt: "How activity trackers can detect early signs of arthritis and heart issues before they become emergencies.",
+        category: "Health",
+        readTime: "11 min read",
+        image: "/images/products/fitbark-gps.jpg",
+    },
+    {
+        slug: "diy-smart-home-pet-automation",
+        title: "DIY Smart Home: Automating Pet Care Pro-Style",
+        excerpt: "No subscriptions involved. How to use Home Assistant and Zigbee sensors to monitor your pet's environment.",
+        category: "Tech",
+        readTime: "15 min read",
+        image: "/images/products/smart-home-sensor.jpg",
     }
 ];
 
@@ -58,7 +107,12 @@ export default function GuidesIndex() {
                     {guides.map((guide) => (
                         <Link key={guide.slug} href={`/guides/${guide.slug}`} className="group flex flex-col overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm transition hover:shadow-xl dark:border-zinc-800 dark:bg-zinc-900">
                             <div className="relative aspect-video w-full overflow-hidden bg-zinc-100">
-                                {/* Placeholder for guide cover */}
+                                <Image
+                                    src={guide.image}
+                                    alt={guide.title}
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                                 <span className="absolute bottom-4 left-4 rounded-md bg-white/20 px-2 py-1 text-xs font-bold text-white backdrop-blur-md">
                                     {guide.category}

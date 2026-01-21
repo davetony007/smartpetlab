@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint"
   },
+  "author": "Dave Tony <ayeyedough@gmail.com>",
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^12.27.4",
