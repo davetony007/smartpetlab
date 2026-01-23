@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Check, X, Activity, Heart, Dog, BarChart, Battery, Signal, Stethoscope, Microscope, Brain, ShieldAlert, Radio } from "lucide-react";
+import { Activity, Heart, BarChart, Stethoscope, Microscope } from "lucide-react";
 import { StickyCTA } from "@/components/StickyCTA";
 import { ComparisonTable } from "@/components/ComparisonTable";
 

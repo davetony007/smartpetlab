@@ -530,5 +530,248 @@ export const products: Product[] = [
         pros: ["Mobile interaction (it drives!)", "Fun for high-prey drive pets", "Full HD Camera", "No monthly fees"],
         cons: ["Requires strong WiFi everywhere", "Wheels struggle on thick carpet"],
         reviews: []
+    },
+    {
+        id: "whistle-switch",
+        name: "Whistle Switch Smart Collar",
+        category: "collar",
+        price: "£179.99",
+        rating: 4.5,
+        reviewCount: 5200,
+        image: "/images/products/whistle-switch.jpg",
+        amazonUrl: "https://www.amazon.co.uk/s?k=Whistle+Switch+Smart+Collar&tag=dts0f-21",
+        description: "Total health and location monitoring. Tracks licking, scratching, sleeping, and drinking habits to flag potential health issues early.",
+        badge: "Best for Health",
+        specifications: {
+            dimensions: "35 x 45 x 15 mm",
+            weight: "26g",
+            batteryLife: "Up to 20 days",
+            waterproofRating: "IPX8 (Submersible)",
+            subscriptionRequired: "Yes",
+            connectivity: "LTE-M, GPS, WiFi, Bluetooth",
+            warranty: "1 Year",
+        },
+        ratingBreakdown: {
+            value: 4.2,
+            battery: 4.8,
+            accuracy: 4.7,
+            app: 4.9, // Excellent health dashboard
+            durability: 4.6,
+        },
+        expertVerdict: "The Whistle Switch is the gold standard for holistic pet monitoring, successfully blending robust GPS tracking with medical-grade health insights. Unlike standard trackers that just tell you *where* your dog is, Whistle tells you *how* your dog is. The scratching and licking metrics are incredibly sensitive—often detecting allergies or skin infections days before you see a hot spot. The swappable battery system is a brilliant design choice, ensuring 'zero downtime' charging.",
+        pros: ["Holistic Health Insights (Scratching/Licking)", "Zero-Downtime Swappable Batteries", "Compact design fits smaller dogs", "Tele-Vet feature included in sub"],
+        cons: ["High monthly subscription cost", "GPS updates can lag in poor AT&T areas"],
+        reviews: [
+            {
+                id: "r1", author: "Jessica M.", rating: 5, date: "15 Jan 2026", title: "Caught an allergy flare-up early",
+                content: "The health metrics are a game changer. It alerted me to my lab's increased scratching trend three days before I even saw a hot spot. We changed his food immediately and avoided a massive vet bill."
+            },
+            {
+                id: "r2", author: "Tom H.", rating: 3, date: "02 Dec 2025", title: "Great data, expensive monthly fee",
+                content: "I love the data, but the subscription is nearly as much as my own phone plan. Plus, the GPS update speed isn't quite 'real-time' if your dog is an actual runner. It's better for health than tracking."
+            }
+        ]
+    },
+    {
+        id: "petkit-purobot-ultra",
+        name: "PetKit Purobot Ultra",
+        category: "care",
+        price: "£699.00",
+        rating: 4.9,
+        reviewCount: 1500,
+        image: "/images/products/petkit-purobot-ultra.jpg",
+        amazonUrl: "https://www.amazon.co.uk/s?k=PetKit+Purobot+Ultra&tag=dts0f-21",
+        description: "The next generation of litter tech. Features a built-in camera, health tracking, and auto-packing waste disposal for a truly hands-free experience.",
+        badge: "Most Advanced",
+        specifications: {
+            dimensions: "65 x 60 x 70 cm",
+            weight: "15kg",
+            batteryLife: "Mains Powered",
+            waterproofRating: "N/A",
+            subscriptionRequired: "No (Free App)",
+            connectivity: "2.4GHz WiFi",
+            warranty: "2 Years",
+        },
+        ratingBreakdown: {
+            value: 4.1, // Premium price
+            battery: 5.0,
+            accuracy: 5.0, // Waste detection
+            app: 4.8,
+            durability: 4.9,
+        },
+        expertVerdict: "This is a futuristic piece of health-tech that transforms a daily chore into a diagnostic tool. The 'Auto-Packing' feature is a genuine innovation—completely sealing away waste and odor before you ever have to touch it. For multi-cat homes, the camera's ability to identify which cat is visiting (and analyze their stool quality) provides peace of mind that justifies the high price tag. Just be warned: it is absolutely massive.",
+        pros: ["Auto-seals waste bags (Zero odor)", "Camera identifies specific cats", "Analysis of stool health/constipation", "Whisper-quiet operation"],
+        cons: ["Massive footprint (check dimensions!)", "Expensive ongoing cost for bags"],
+        reviews: [
+            {
+                id: "r1", author: "Sarah L.", rating: 5, date: "10 Feb 2026", title: "Zero smell. Zero scooping.",
+                content: "The bag sealing is magic. No more 'litter box smell' in my small apartment. I actually find the poop photos helpful for tracking my senior cat's kidney issues, which sounds weird but is super useful."
+            },
+            {
+                id: "r2", author: "James P.", rating: 4, date: "22 Jan 2026", title: "Amazing tech, but it's HUGE",
+                content: "It works perfectly, but it is like parking a small spaceship in my laundry room. Make sure you measure your space twice. The app notifications can also be a bit much."
+            }
+        ]
+    },
+    {
+        id: "petlibro-dockstream",
+        name: "PetLibro Dockstream Water Fountain",
+        category: "feeder",
+        price: "£69.99",
+        rating: 4.7,
+        reviewCount: 3400,
+        image: "/images/products/petlibro-dockstream.jpg",
+        amazonUrl: "https://www.amazon.co.uk/s?k=PetLibro+Dockstream+Fountain&tag=dts0f-21",
+        description: "Battery-operated, wireless pump fountain tailored for cat safety. Monitors water intake to prevent dehydration and kidney issues.",
+        specifications: {
+            dimensions: "23 x 23 x 16 cm",
+            weight: "1.2kg",
+            batteryLife: "30 days (Battery Mode) or Mains",
+            waterproofRating: "IPX7 (Pump only)",
+            subscriptionRequired: "No",
+            connectivity: "2.4GHz WiFi (App version)",
+            warranty: "1 Year",
+        },
+        ratingBreakdown: {
+            value: 4.8,
+            battery: 4.5,
+            accuracy: 4.6, // Intake tracking
+            app: 4.4,
+            durability: 4.5,
+        },
+        expertVerdict: "The Dockstream solves the single biggest annoyance of pet fountains: cleaning the pump. By using a wireless induction motor, you can simply lift the tank off the base and wash it without tangling cords. The app's hydration tracking is accurate enough to spot trends (like a drop in drinking indicative of illness), making it an essential preventative health tool for male cats prone to urinary blocks.",
+        pros: ["Wireless pump makes cleaning instant", "Hydration tracking history", "Backup battery for power outages", "Stainless steel hygienic top"],
+        cons: ["App connectivity can be spotty", "Proprietary filters are a recurring cost"],
+        reviews: [
+            {
+                id: "r1", author: "Emily R.", rating: 5, date: "05 Mar 2026", title: "Finally a fountain I can clean",
+                content: "I've owned 5 differnt fountains and hated cleaning all of them. This one takes 30 seconds. The induction pump is genius. My cat drinks twice as much water now."
+            },
+            {
+                id: "r2", author: "Chris B.", rating: 4, date: "14 Feb 2026", title: "App is okay, hardware is great",
+                content: "The fountain itself is silent and beautiful. The app data is a bit twitchy—some days it says my cat drank nothing when I watched him drink. Buy it for the wireless pump, not the stats."
+            }
+        ]
+    },
+    {
+        id: "brilliantpad-smart",
+        name: "BrilliantPad Smart",
+        category: "care",
+        price: "£229.00",
+        rating: 4.1,
+        reviewCount: 850,
+        image: "/images/products/brilliantpad-smart.jpg",
+        amazonUrl: "https://www.amazon.co.uk/s?k=BrilliantPad+Smart&tag=dts0f-21",
+        description: "Self-cleaning indoor dog potty. Wraps and seals waste automatically, keeping your home odor-free. Ideal for puppies and small dogs.",
+        specifications: {
+            dimensions: "86 x 61 x 15 cm",
+            weight: "5kg",
+            batteryLife: "Mains Powered",
+            waterproofRating: "N/A",
+            subscriptionRequired: "No (Pad subscription recommended)",
+            connectivity: "WiFi, Camera",
+            warranty: "1 Year",
+        },
+        ratingBreakdown: {
+            value: 3.8, // Pad costs add up
+            battery: 5.0,
+            accuracy: 4.9, // Waste recognition
+            app: 4.0,
+            durability: 4.2,
+        },
+        expertVerdict: "For apartment dwellers with small dogs, the BrilliantPad Smart is a lifeline. It effectively automates the 'pee pad' lifecycle, wrapping and sealing waste so you never have to see or smell it. The addition of the camera in the Smart model isn't a gimmick—it allows the AI to flag potential digestive issues (like diarrhea or blood) while you're at work. It requires a commitment to buying their specific rolls, but for the convenience, it's worth it.",
+        pros: ["Completely odorless waste disposal", " AI Health Alerts for digestive issues", "Ideal for high-rise apartments", "Hands-off cleaning"],
+        cons: ["Expensive proprietary refill rolls", "Strictly for dogs under 25lbs"],
+        reviews: [
+            {
+                id: "r1", author: "Amanda K.", rating: 5, date: "18 Dec 2025", title: "Lifesaver for my senior Yorkie",
+                content: "My dog can't hold it while I'm at work anymore. This took a few days of training, but now he uses it reliably and my apartment smells fresh when I come home. Incredible."
+            },
+            {
+                id: "r2", author: "Rob D.", rating: 3, date: "30 Nov 2025", title: "Good but pricey to run",
+                content: "The machine works, but the cost of the rolls adds up fast. Also, if your dog has soft stools, the rolling mechanism can occasionally get... messy. Requires some maintenance."
+            }
+        ]
+    },
+    {
+        id: "invoxia-minitailz",
+        name: "Invoxia Minitailz",
+        category: "collar",
+        price: "£89.00",
+        rating: 4.6,
+        reviewCount: 600,
+        image: "/images/products/invoxia-minitailz.jpg",
+        amazonUrl: "https://www.amazon.co.uk/s?k=Invoxia+Minitailz&tag=dts0f-21",
+        description: "Biometric health scanner for your dog. Tracks resting heart rate, respiratory rate, and atrial fibrillation detection alongside GPS.",
+        badge: "Medical Grade",
+        specifications: {
+            dimensions: "59 x 30 x 10 mm",
+            weight: "37g",
+            batteryLife: "Up to 15 days",
+            waterproofRating: "IP67",
+            subscriptionRequired: "Yes",
+            connectivity: "LTE-M, GPS, Bluetooth",
+            warranty: "1 Year",
+        },
+        ratingBreakdown: {
+            value: 4.5,
+            battery: 4.4,
+            accuracy: 5.0, // Health data
+            app: 4.7,
+            durability: 4.3,
+        },
+        expertVerdict: "The Invoxia Minitailz is in a category of its own. It is a 'Biometric Wearable' first, and a GPS tracker second. Its ability to monitor resting heart rate and respiratory rate with 97%+ accuracy makes it an essential tool for owners of breeds prone to heart failure (like Cavaliers or Dobermans). The GPS is adequate for finding a lost dog, but its true value is in the medical data it collects while your dog sleeps.",
+        pros: ["Clinical-grade Heart/Lung monitoring", "AFib and Irregularity detection", "Lightweight enough for cats", "No SIM card needed (Built-in)"],
+        cons: ["GPS updates less frequent than Fi/Tractive", "Requires snug fit for accuracy"],
+        reviews: [
+            {
+                id: "r1", author: "Dr. Chen", rating: 5, date: "12 Feb 2026", title: "Impressive proactive health data",
+                content: "My dog has a heart murmur, and being able to monitor his resting respiratory rate daily gives me so much peace of mind. I showed the data graphs to my cardiologist and she was impressed."
+            },
+            {
+                id: "r2", author: "Lisa S.", rating: 4, date: "05 Jan 2026", title: "Great health tech, average GPS",
+                content: "If you want this purely to find a lost dog in the woods, get a Tractive. If you want to know if your dog is developing heart issues, get this. It's a medical device, not a lo-jack."
+            }
+        ]
+    },
+    {
+        id: "puppod-rocker",
+        name: "PupPod Rocker",
+        category: "toy",
+        price: "£199.00",
+        rating: 4.4,
+        reviewCount: 1100,
+        image: "/images/products/puppod-rocker.jpg",
+        amazonUrl: "https://www.amazon.co.uk/s?k=PupPod+Rocker&tag=dts0f-21",
+        description: "App-controlled puzzle game that gets harder as your dog gets smarter. Mental stimulation that tires them out faster than a walk.",
+        specifications: {
+            dimensions: "12 x 12 x 15 cm",
+            weight: "0.8kg",
+            batteryLife: "PRO: Mains / Rocker: 2x AA",
+            waterproofRating: "No",
+            subscriptionRequired: "No",
+            connectivity: "Bluetooth / WiFi",
+            warranty: "1 Year",
+        },
+        ratingBreakdown: {
+            value: 3.9, // Pricey for a toy
+            battery: 4.0,
+            accuracy: 4.8, // Timing accuracy
+            app: 4.5,
+            durability: 4.7, // Tough plastic
+        },
+        expertVerdict: "The PupPod is the premier 'Enrichment Console' for dogs. It's not just a toy that spits out treats; it's a cognitive training platform. By separating the trigger (the rocker) from the reward (the dispenser), it forces your dog to think critically and solve problems. It is the single most effective tool we've tested for draining the mental energy of high-drive breeds like Border Collies and Aussies.",
+        pros: ["Genuine cognitive workout", "Separation anxiety relief", "Progressive levels get harder", "Durable 'Rocker' unit"],
+        cons: ["High entry price", "Can be noisy for sensitive owners"],
+        reviews: [
+            {
+                id: "r1", author: "Marcus T.", rating: 5, date: "20 Mar 2026", title: "Tires out my Border Collie",
+                content: "Ten minutes of this tires my dog out more than a 3-mile run. Watching her figure out the patterns and learn to wait for the specific sound cues is fascinating."
+            },
+            {
+                id: "r2", author: "Jenny W.", rating: 3, date: "28 Feb 2026", title: "Frustrating for some dogs",
+                content: "Great concept, but my dog just got frustrated and started barking at the dispenser. It takes a lot of owner involvement to 'teach' them how to play at first, it's not a 'turn on and leave' toy immediately."
+            }
+        ]
     }
 ];

@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { Check, X, Cpu, Thermometer, Wifi, Home, Server, EyeOff, Shield, Radio, Lock, Zap } from "lucide-react";
+
+import { Cpu, Thermometer, Wifi, Server, EyeOff, Radio, Zap } from "lucide-react";
 import { StickyCTA } from "@/components/StickyCTA";
 
 

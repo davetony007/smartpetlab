@@ -5,16 +5,11 @@ const { execSync } = require('child_process');
 
 // Map of product IDs to their official pages (or highly relevant pages)
 const products = {
-    'litter-robot-4': 'https://www.litter-robot.com/litter-robot-4.html',
-    'petcube-bites': 'https://petcube.com/bites-2-lite/', // Redirects usually work
-    'wickedbone': 'https://www.cheerble.com/products/wickedbone',
-    'fitbark-gps': 'https://www.fitbark.com/store/fitbark-gps',
-    'ifetch': 'https://goifetch.com/products/ifetch',
-    'cheerble-ball': 'https://www.cheerble.com/products/wicked-ball-se',
-    'eufy-dog-camera': 'https://us.eufy.com/products/t7200',
-    'honeyguaridan-feeder': 'https://honeyguardian.com/', // General home page often has the hero
-    'catlink-scooper': 'https://www.catlink.us/',
-    'skymee-owl': 'https://skymee.com/'
+    'whistle-switch': 'https://www.whistle.com/',
+    'petkit-purobot-ultra': 'https://petkit.com/products/purobot-ultra-self-cleaning-cat-litter-box-with-camera',
+    'brilliantpad-smart': 'https://www.brilliantpad.com/',
+    'invoxia-minitailz': 'https://petcare.invoxia.com/',
+    'puppod-rocker': 'https://puppod.com/'
 };
 
 const outputDir = path.join(process.cwd(), 'public/images/products');
