@@ -11,14 +11,33 @@ export default function ComparisonsPage() {
                 We test the top brands side-by-side so you don't have to.
             </p>
             <div className="mt-12 w-full max-w-4xl space-y-8">
-                {/* Placeholders for comparison rows */}
-                {[1, 2].map((i) => (
-                    <div key={i} className="flex h-48 w-full items-center justify-between rounded-2xl bg-zinc-100 p-8 dark:bg-zinc-900 animate-pulse">
-                        <div className="h-32 w-32 rounded-full bg-zinc-200 dark:bg-zinc-800" />
-                        <div className="text-2xl font-bold text-zinc-300">VS</div>
-                        <div className="h-32 w-32 rounded-full bg-zinc-200 dark:bg-zinc-800" />
-                    </div>
-                ))}
+                {/* Tractive vs AirTag */}
+                <a href="/comparisons/tractive-vs-airtag" className="group flex w-full items-center justify-between rounded-2xl border border-zinc-200 bg-white p-8 shadow-sm transition hover:border-blue-500 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-blue-500">
+                    <div className="flex-1 text-center font-bold text-zinc-900 group-hover:text-blue-600 dark:text-white dark:group-hover:text-blue-400">Tractive GPS</div>
+                    <div className="mx-8 flex h-16 w-16 items-center justify-center rounded-full bg-zinc-100 text-sm font-black text-zinc-400 dark:bg-zinc-800">VS</div>
+                    <div className="flex-1 text-center font-bold text-zinc-900 dark:text-white">Apple AirTag</div>
+                </a>
+
+                {/* LR4 vs PetKit */}
+                <a href="/comparisons/litter-robot-vs-petkit" className="group flex w-full items-center justify-between rounded-2xl border border-zinc-200 bg-white p-8 shadow-sm transition hover:border-purple-500 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-purple-500">
+                    <div className="flex-1 text-center font-bold text-zinc-900 group-hover:text-purple-600 dark:text-white dark:group-hover:text-purple-400">Litter-Robot 4</div>
+                    <div className="mx-8 flex h-16 w-16 items-center justify-center rounded-full bg-zinc-100 text-sm font-black text-zinc-400 dark:bg-zinc-800">VS</div>
+                    <div className="flex-1 text-center font-bold text-zinc-900 dark:text-white">PetKit Purobot Ultra</div>
+                </a>
+
+                {/* Tractive vs PitPat */}
+                <a href="/comparisons/tractive-vs-pitpat" className="group flex w-full items-center justify-between rounded-2xl border border-zinc-200 bg-white p-8 shadow-sm transition hover:border-green-500 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-green-500">
+                    <div className="flex-1 text-center font-bold text-zinc-900 group-hover:text-green-600 dark:text-white dark:group-hover:text-green-400">Tractive GPS</div>
+                    <div className="mx-8 flex h-16 w-16 items-center justify-center rounded-full bg-zinc-100 text-sm font-black text-zinc-400 dark:bg-zinc-800">VS</div>
+                    <div className="flex-1 text-center font-bold text-zinc-900 dark:text-white">PitPat GPS</div>
+                </a>
+
+                {/* Furbo vs Eufy */}
+                <a href="/comparisons/furbo-vs-eufy" className="group flex w-full items-center justify-between rounded-2xl border border-zinc-200 bg-white p-8 shadow-sm transition hover:border-yellow-500 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-yellow-500">
+                    <div className="flex-1 text-center font-bold text-zinc-900 group-hover:text-yellow-600 dark:text-white dark:group-hover:text-yellow-400">Furbo 360</div>
+                    <div className="mx-8 flex h-16 w-16 items-center justify-center rounded-full bg-zinc-100 text-sm font-black text-zinc-400 dark:bg-zinc-800">VS</div>
+                    <div className="flex-1 text-center font-bold text-zinc-900 dark:text-white">Eufy Pet D605</div>
+                </a>
             </div>
         </main>
     );

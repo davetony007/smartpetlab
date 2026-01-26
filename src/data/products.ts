@@ -17,6 +17,7 @@ export interface Product {
     image: string;
     amazonUrl: string;
     description: string;
+    brand: string; // New SEO Field
     // New Rich Content Fields
     specifications?: {
         dimensions: string;
@@ -52,6 +53,7 @@ export const products: Product[] = [
         image: "/images/products/tractive-gps.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=Tractive+GPS+Dog+4+Tracker&tag=dts0f-21",
         description: "Unlimited range GPS tracking and activity monitoring. Water-resistant and durable, designed for UK adventures. Includes virtual fencing and health alerts.",
+        brand: "Tractive",
         badge: "Best Overall",
         // Rich Data Implementation
         specifications: {
@@ -94,6 +96,7 @@ export const products: Product[] = [
         image: "/images/products/petlibro-granary.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=Petlibro+Granary+Camera+Feeder+5L&tag=dts0f-21",
         description: "5L Automatic feeder with 1080P HD camera. See, talk to, and feed your pet from anywhere. Features night vision and two-way audio.",
+        brand: "PetLibro",
         badge: "Editor's Choice",
         specifications: {
             dimensions: "34 x 19 x 19 cm",
@@ -131,6 +134,7 @@ export const products: Product[] = [
         image: "/images/products/furbo-360.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=Furbo+360+Dog+Camera&tag=dts0f-21",
         description: "The ultimate pet nanny. 360-degree rotation, treat tossing, and AI barking alerts. Keep an eye on your dog day and night.",
+        brand: "Furbo",
         badge: "Premium Pick",
         specifications: {
             dimensions: "15 x 12 x 12 cm",
@@ -168,6 +172,7 @@ export const products: Product[] = [
         image: "/images/products/surefeed-microchip.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=SureFeed+Microchip+Pet+Feeder&tag=dts0f-21",
         description: "Stops pets stealing each other's food. Works with existing microchips. Essential for multi-pet homes.",
+        brand: "Sure Petcare",
         specifications: {
             dimensions: "32 x 23 x 20 cm",
             weight: "1.5kg",
@@ -198,6 +203,7 @@ export const products: Product[] = [
         image: "/images/products/pitpat-gps.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=PitPat+GPS+Tracker&tag=dts0f-21",
         description: "No subscription required. GPS tracking and activity monitoring designed specifically for dogs.",
+        brand: "PitPat",
         specifications: {
             dimensions: "53 x 32 x 15 mm",
             weight: "30g",
@@ -228,6 +234,7 @@ export const products: Product[] = [
         image: "/images/products/litter-robot-4.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=Litter+Robot+4&tag=dts0f-21",
         description: "The highest-rated self-cleaning litter box. Never scoop again. Reduces usage by up to 50% and controls odors.",
+        brand: "Whisker",
         badge: "Top Rated",
         specifications: {
             dimensions: "75 x 56 x 68 cm",
@@ -260,6 +267,7 @@ export const products: Product[] = [
         image: "/images/products/petcube-bites.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=Petcube+Bites+2+Lite&tag=dts0f-21",
         description: "Smart HD pet camera with treat dispenser. 1080p video, two-way audio, and night vision.",
+        brand: "Petcube",
         specifications: {
             dimensions: "27 x 14.5 x 7.6 cm",
             weight: "1.1kg",
@@ -291,6 +299,7 @@ export const products: Product[] = [
         image: "/images/products/wickedbone.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=Wickedbone+Smart+Dog+Toy&tag=dts0f-21",
         description: "Interactive gaming device for dogs. Choose from drive mode or interactive mode to keep your pup entertained.",
+        brand: "Wickedbone",
         badge: "Most Fun",
         specifications: {
             dimensions: "15.1 x 6.4 cm",
@@ -323,6 +332,7 @@ export const products: Product[] = [
         image: "/images/products/fitbark-gps.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=FitBark+GPS+Dog+Tracker&tag=dts0f-21",
         description: "Health and location tracker. Monitors activity, sleep, distance, and calories burned.",
+        brand: "FitBark",
         specifications: {
             dimensions: "47 x 30 x 15 mm",
             weight: "16g",
@@ -354,6 +364,7 @@ export const products: Product[] = [
         image: "/images/products/ifetch.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=iFetch+Automatic+Ball+Launcher&tag=dts0f-21",
         description: "The award-winning automatic ball launcher. Teaches your dog to fetch by themselves.",
+        brand: "iFetch",
         specifications: {
             dimensions: "26 x 20 x 18 cm",
             weight: "1.1kg",
@@ -385,6 +396,7 @@ export const products: Product[] = [
         image: "/images/products/cheerble-ball.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=Cheerble+Wicked+Ball+SE&tag=dts0f-21",
         description: "Automatic moving ball for dogs and cats. Intelligent companion with 3 interaction modes.",
+        brand: "Cheerble",
         specifications: {
             dimensions: "56mm Diameter",
             weight: "104g",
@@ -416,6 +428,7 @@ export const products: Product[] = [
         image: "/images/products/eufy-dog-camera.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=eufy+Pet+Dog+Camera&tag=dts0f-21",
         description: "1080p Dog Camera with Treat Dispenser. Wide angle lens and 270-degree rotatable body.",
+        brand: "eufy",
         specifications: {
             dimensions: "14.5 x 14.5 x 31.6 cm",
             weight: "1.6kg",
@@ -447,6 +460,7 @@ export const products: Product[] = [
         image: "/images/products/honeyguaridan-feeder.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=HoneyGuaridan+Automatic+Pet+Feeder&tag=dts0f-21",
         description: "Reliable and affordable automatic feeder with voice recording and stainless steel bowl.",
+        brand: "HoneyGuaridan",
         badge: "Best Value",
         specifications: {
             dimensions: "30 x 20 x 34 cm", // Approx based on 4L models
@@ -479,6 +493,7 @@ export const products: Product[] = [
         image: "/images/products/catlink-scooper.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=CATLINK+Pro+Self+Cleaning+Litter+Box&tag=dts0f-21",
         description: "Smart litter box with health monitoring. Double odor removal and app control.",
+        brand: "CATLINK",
         specifications: {
             dimensions: "60 x 58 x 71 cm",
             weight: "13.5kg",
@@ -510,6 +525,7 @@ export const products: Product[] = [
         image: "/images/products/skymee-owl.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=Skymee+Owl+Robot&tag=dts0f-21",
         description: "Mobile HD pet camera with treat dispenser. Interacts with your pet by moving around.",
+        brand: "Skymee",
         specifications: {
             dimensions: "17 x 17 x 12.5 cm",
             weight: "700g",
@@ -541,6 +557,7 @@ export const products: Product[] = [
         image: "/images/products/whistle-switch.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=Whistle+Switch+Smart+Collar&tag=dts0f-21",
         description: "Total health and location monitoring. Tracks licking, scratching, sleeping, and drinking habits to flag potential health issues early.",
+        brand: "Whistle",
         badge: "Best for Health",
         specifications: {
             dimensions: "35 x 45 x 15 mm",
@@ -582,6 +599,7 @@ export const products: Product[] = [
         image: "/images/products/petkit-purobot-ultra.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=PetKit+Purobot+Ultra&tag=dts0f-21",
         description: "The next generation of litter tech. Features a built-in camera, health tracking, and auto-packing waste disposal for a truly hands-free experience.",
+        brand: "PetKit",
         badge: "Most Advanced",
         specifications: {
             dimensions: "65 x 60 x 70 cm",
@@ -623,6 +641,7 @@ export const products: Product[] = [
         image: "/images/products/petlibro-dockstream.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=PetLibro+Dockstream+Fountain&tag=dts0f-21",
         description: "Battery-operated, wireless pump fountain tailored for cat safety. Monitors water intake to prevent dehydration and kidney issues.",
+        brand: "PetLibro",
         specifications: {
             dimensions: "23 x 23 x 16 cm",
             weight: "1.2kg",
@@ -663,6 +682,7 @@ export const products: Product[] = [
         image: "/images/products/brilliantpad-smart.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=BrilliantPad+Smart&tag=dts0f-21",
         description: "Self-cleaning indoor dog potty. Wraps and seals waste automatically, keeping your home odor-free. Ideal for puppies and small dogs.",
+        brand: "BrilliantPad",
         specifications: {
             dimensions: "86 x 61 x 15 cm",
             weight: "5kg",
@@ -703,6 +723,7 @@ export const products: Product[] = [
         image: "/images/products/invoxia-minitailz.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=Invoxia+Minitailz&tag=dts0f-21",
         description: "Biometric health scanner for your dog. Tracks resting heart rate, respiratory rate, and atrial fibrillation detection alongside GPS.",
+        brand: "Invoxia",
         badge: "Medical Grade",
         specifications: {
             dimensions: "59 x 30 x 10 mm",
@@ -744,6 +765,7 @@ export const products: Product[] = [
         image: "/images/products/puppod-rocker.jpg",
         amazonUrl: "https://www.amazon.co.uk/s?k=PupPod+Rocker&tag=dts0f-21",
         description: "App-controlled puzzle game that gets harder as your dog gets smarter. Mental stimulation that tires them out faster than a walk.",
+        brand: "PupPod",
         specifications: {
             dimensions: "12 x 12 x 15 cm",
             weight: "0.8kg",
@@ -773,5 +795,198 @@ export const products: Product[] = [
                 content: "Great concept, but my dog just got frustrated and started barking at the dispenser. It takes a lot of owner involvement to 'teach' them how to play at first, it's not a 'turn on and leave' toy immediately."
             }
         ]
+    },
+    {
+        id: "groov-e-feeder",
+        name: "Groov-e Pet-Tech Automatic Feeder",
+        category: "feeder",
+        price: "£49.49",
+        rating: 4.5,
+        reviewCount: 450,
+        image: "/images/products/groov-e-feeder.jpg",
+        amazonUrl: "https://amzn.to/4k34mnI",
+        description: "Dry food dispenser with 4L capacity and dual power options. Schedule up to 6 meals a day with flexible portions.",
+        brand: "Groov-e",
+        specifications: {
+            dimensions: "N/A",
+            weight: "N/A",
+            batteryLife: "Mains or 4x AA Batteries",
+            waterproofRating: "No",
+            subscriptionRequired: "No",
+            connectivity: "LCD Screen (Not WiFi)",
+            warranty: "1 Year",
+        },
+        ratingBreakdown: {
+            value: 4.8,
+            battery: 4.5,
+            accuracy: 4.6,
+            app: 1.0, // No app
+            durability: 4.4,
+        },
+        expertVerdict: "A solid, no-nonsense automatic feeder. It lacks the WiFi and camera features of the PetLibro or PetKit, but for roughly £50, it gets the job done reliably. The airtight lid is a nice touch for keeping kibble fresh. Perfect if you just want to automate feeding without complex apps.",
+        pros: ["Affordable", "Dual power backup", "Airtight lid"],
+        cons: ["No App/WiFi", "Programming can be fiddly"],
+        reviews: [
+            {
+                id: "r1", author: "Emma Ashfield", rating: 5, date: "24 Jan 2026", title: "Works great",
+                content: "Well l got this because my dog wasn't drinking much but this works great but down side of it all it has to be plug in all the time"
+            },
+            {
+                id: "r2", author: "Book Mad", rating: 4, date: "10 Jan 2026", title: "Good basic feeder",
+                content: "I didn't want one that needed to be plugged in and did not want anything too hi-tech. This is relatively easy to set up."
+            }
+        ]
+    },
+    {
+        id: "petkit-backpack",
+        name: "PETKIT Cat Carrier Backpack",
+        category: "care",
+        price: "£69.99",
+        rating: 5.0,
+        reviewCount: 320,
+        image: "/images/products/petkit-backpack.jpg",
+        amazonUrl: "https://amzn.to/4bjXu2W",
+        description: "Ventilated cat carrier backpack with inbuilt fan and light. Detachable and lightweight for comfortable travel.",
+        brand: "PetKit",
+        specifications: {
+            dimensions: "Standard Backpack",
+            weight: "1.5kg",
+            batteryLife: "USB Power Bank (Not Included)",
+            waterproofRating: "Splashproof",
+            subscriptionRequired: "No",
+            connectivity: "None",
+            warranty: "1 Year",
+        },
+        ratingBreakdown: {
+            value: 4.5,
+            battery: 4.0, // Fan drain
+            accuracy: 5.0, // Comfort
+            app: 1.0,
+            durability: 4.9,
+        },
+        expertVerdict: "Traveling with a cat is stressful. This backpack makes it bearable. The built-in fan is genuine genius for hot summer vet visits, preventing overheating. The tinted window gives them a view without feeling exposed. It's expensive for a carrier, but the build quality is undeniable.",
+        pros: ["Built-in Fan for cooling", "Tinted window reduces stress", "Very comfortable to wear"],
+        cons: ["Needs power bank for fan", "Pricey"],
+        reviews: [
+            {
+                id: "r1", author: "Ebru T.", rating: 5, date: "12 Feb 2026", title: "Worth the money",
+                content: "It feels really secure! The product seems to be good quality & i’m happy to pay out more for safety reasons. I’m hoping it proves to be worth the money as time goes on."
+            }
+        ]
+    },
+    {
+        id: "retractable-leash",
+        name: "Dual Retractable Dog Leash",
+        category: "care",
+        price: "£18.99",
+        rating: 3.0,
+        reviewCount: 150,
+        image: "/images/products/retractable-leash.jpg",
+        amazonUrl: "https://amzn.to/4qzZTeA",
+        description: "Walk two dogs at once with 360-degree swivel technology to prevent tangling. Includes LED flashlight and bag holder.",
+        brand: "Generic",
+        specifications: {
+            dimensions: "3m Length per leash",
+            weight: "500g",
+            batteryLife: "AAA for Light",
+            waterproofRating: "No",
+            subscriptionRequired: "No",
+            connectivity: "None",
+            warranty: "30 Days",
+        },
+        ratingBreakdown: {
+            value: 4.0,
+            battery: 3.0,
+            accuracy: 2.5, // Retraction issues
+            app: 1.0,
+            durability: 2.0, // Prone to breaking
+        },
+        expertVerdict: "A great concept executively poorly. Walking two dogs is hard, and this *tries* to help with the spinning swivel. When it works, it's great. But the retraction mechanism is prone to jamming, and the build quality feels cheap compared to a Flexi lead. Okay for occasional use with small, calm dogs.",
+        pros: ["Walk 2 dogs with one hand", "Built-in torch", "Cheap"],
+        cons: ["Jamming mechanism", "Build quality concerns", "Not for strong pullers"],
+        reviews: [
+            {
+                id: "r1", author: "Sheena P.", rating: 5, date: "05 Jan 2026", title: "Excellent for 2 dogs",
+                content: "Excellent for taking 2 dogs out at same time without getting in a tangle. The light is very handy in the dark mornings."
+            },
+            {
+                id: "r2", author: "IOW4465", rating: 1, date: "02 Jan 2026", title: "Faulty",
+                content: "Lead was faulty and would not retract. Impossible to return! Do not use this Product."
+            }
+        ]
+    },
+    {
+        id: "yaheetech-tree",
+        name: "Yaheetech 158cm Cat Tree",
+        category: "care",
+        price: "£37.99",
+        rating: 4.8,
+        reviewCount: 2100,
+        image: "/images/products/yaheetech-tree.jpg",
+        amazonUrl: "https://amzn.to/4pZ74Ms",
+        description: "Multi-level cat tower with scratching posts, 2 houses, and dangling balls. 158cm tall.",
+        brand: "Yaheetech",
+        badge: "Best Value",
+        specifications: {
+            dimensions: "158cm Height",
+            weight: "15kg",
+            batteryLife: "N/A",
+            waterproofRating: "No",
+            subscriptionRequired: "No",
+            connectivity: "None",
+            warranty: "1 Year",
+        },
+        ratingBreakdown: {
+            value: 5.0,
+            battery: 5.0,
+            accuracy: 5.0,
+            app: 1.0,
+            durability: 4.5,
+        },
+        expertVerdict: "For under £40, this is an absolute steal. It is tall (158cm), stable enough for most active cats (though use the wall anchor!), and has multiple sleeping spots. The plush fabric isn't the highest quality, but for the price, you cannot complain. A perfect starter tree.",
+        pros: ["Unbeatable price", "Easy assembly", "Includes wall anchor"],
+        cons: ["Fabric is thin", "Wobbly for heavy cats"],
+        reviews: [
+            {
+                id: "r1", author: "Julija U.", rating: 5, date: "15 Feb 2026", title: "Kitten loves it",
+                content: "Bought this tree for our wee kitten. He absolutely loves it! It was fairly easy to put together, and it is very sturdy."
+            },
+            {
+                id: "r2", author: "Cath", rating: 4, date: "20 Jan 2026", title: "Good but tall platform weak",
+                content: "My kittens seem to like it although mostly as a new place to play fight! Decent value. The tall platform is a bit wobbly though."
+            }
+        ]
+    },
+    {
+        id: "zerodis-door",
+        name: "Zerodis Smart Cat Door",
+        category: "care",
+        price: "£91.86",
+        rating: 4.5,
+        reviewCount: 50,
+        image: "/images/products/zerodis-door.jpg",
+        amazonUrl: "https://amzn.to/3LyQzbR",
+        description: "Electronic flap with smart sensing technology. Collar activated access to prevent unwanted animals entering.",
+        brand: "Zerodis",
+        specifications: {
+            dimensions: "Standard Flap",
+            weight: "1kg",
+            batteryLife: "Mains / Battery",
+            waterproofRating: "Weatherproof",
+            subscriptionRequired: "No",
+            connectivity: "RFID Sensor",
+            warranty: "1 Year",
+        },
+        ratingBreakdown: {
+            value: 3.5,
+            battery: 4.0,
+            accuracy: 4.5,
+            app: 1.0,
+            durability: 4.5,
+        },
+        expertVerdict: "A generic but functional RFID door. It does exactly what it says: keeps neighborhood cats out while letting yours in. The construction is solid polycarbonate. It's pricier than a basic flap but cheaper than the SureFlap Connect.",
+        pros: ["Keeps intruder cats out", "Collar activated", "Weatherproof seal"],
+        cons: ["Generic instruction manual", "Pricey for non-app model"],
+        reviews: []
     }
 ];

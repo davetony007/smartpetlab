@@ -19,7 +19,7 @@ export function JsonLd({ product, url }: JsonLdProps) {
         description: product.description,
         brand: {
             "@type": "Brand",
-            name: product.name.split(" ")[0] || "SmartPetLab",
+            name: product.brand || "SmartPetLab",
         },
         review: product.reviews?.map((review) => ({
             "@type": "Review",
