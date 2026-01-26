@@ -73,6 +73,14 @@ const guides = [
         image: "/images/products/fitbark-gps.jpg",
     },
     {
+        slug: "diy-smart-home-pets",
+        title: "DIY Smart Home for Pets: Automating Safety",
+        excerpt: "Learn how to use Aqara sensors, Smart Plugs, and Home Assistant to track litter usage and prevent heat stroke for under $50.",
+        category: "Tech",
+        readTime: "12 min read",
+        image: "/images/products/smart-home-sensor.jpg",
+    },
+    {
         slug: "diy-smart-home-pet-automation",
         title: "DIY Smart Home: Automating Pet Care Pro-Style",
         excerpt: "No subscriptions involved. How to use Home Assistant and Zigbee sensors to monitor your pet's environment.",
