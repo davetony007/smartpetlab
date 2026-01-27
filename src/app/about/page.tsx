@@ -1,6 +1,6 @@
 export const metadata = {
     title: "About SmartPetLab - Our Mission",
-    description: "Learn why we started SmartPetLab and how we test pet technology.",
+    description: "Learn why we started SmartPetLab, our rigorous testing methodology for pet technology, and our mission to provide unbiased, scientific reviews for pet owners.",
 };
 
 export default function AboutPage() {

@@ -4,7 +4,7 @@ import { StickyCTA } from "@/components/StickyCTA";
 
 export const metadata = {
     title: "Are Pet Cameras Safe? Privacy & Security Guide | SmartPetLab",
-    description: "Worried about privacy? We explain how to secure your Furbo, Petcube, or Eufy camera from hackers.",
+    description: "Worried about privacy? We explain how to secure your Furbo, Petcube, or Eufy camera from hackers using 2FA, guest networks, and local storage options for maximum security.",
 };
 
 export default function ArticlePage() {

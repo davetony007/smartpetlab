@@ -4,7 +4,7 @@ import { StickyCTA } from "@/components/StickyCTA";
 import { ComparisonTable } from "@/components/ComparisonTable";
 
 export const metadata = {
-    title: "Wearable Health Monitors: Interpreting Itch Scores & Sleep Data (2026) | SmartPetLab",
+    title: "Wearable Health Monitors: Understanding Itch Scores (2026) | SmartPetLab",
     description: "It's not just a GPS. It's an early warning system for Cancer, Osteoarthritis, and Allergies. We review the algorithms of Whistle vs. Fi.",
     openGraph: {
         title: "Wearable Health Monitors: Interpreting Itch Scores & Sleep Data",

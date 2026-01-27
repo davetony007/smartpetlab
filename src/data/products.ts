@@ -846,7 +846,7 @@ export const products: Product[] = [
         reviewCount: 320,
         image: "/images/products/petkit-backpack.jpg",
         amazonUrl: "https://amzn.to/4bjXu2W",
-        description: "Ventilated cat carrier backpack with inbuilt fan and light. Detachable and lightweight for comfortable travel.",
+        description: "Ventilated cat carrier backpack featuring an advanced built-in fan system and internal lighting. Designed with a tinted window to reduce environmental stress, making vet visits and travel significantly more comfortable for your cat.",
         brand: "PetKit",
         specifications: {
             dimensions: "Standard Backpack",
@@ -988,5 +988,43 @@ export const products: Product[] = [
         pros: ["Keeps intruder cats out", "Collar activated", "Weatherproof seal"],
         cons: ["Generic instruction manual", "Pricey for non-app model"],
         reviews: []
+    },
+    {
+        id: "sureflap-connect",
+        name: "SureFlap Microchip Pet Door Connect",
+        category: "care",
+        price: "£150.00",
+        rating: 4.8,
+        reviewCount: 3200,
+        image: "/images/products/sureflap-connect.jpg",
+        amazonUrl: "https://www.amazon.co.uk/s?k=SureFlap+Connect&tag=dts0f-21",
+        description: "The world's first app-controlled microchip pet door. Lock and unlock from anywhere, set curfews, and monitor your pet's activity remotely via the Hub.",
+        brand: "Sure Petcare",
+        badge: "Smart Home Ready",
+        specifications: {
+            dimensions: "21 x 21 cm (Flap Area)",
+            weight: "1.3kg",
+            batteryLife: "6 months (4x C Cells)",
+            waterproofRating: "Weatherproof",
+            subscriptionRequired: "No",
+            connectivity: "Hub (Ethernet) + RFID",
+            warranty: "3 Years",
+        },
+        ratingBreakdown: {
+            value: 4.5,
+            battery: 4.8,
+            accuracy: 5.0,
+            app: 4.9,
+            durability: 4.7,
+        },
+        expertVerdict: "This is the gold standard for pet doors. The ability to set a 'Curfew' that automatically locks the door at a specific time (keeping your pet safe from night-time predators) is a game changer. It works flawlessly with the Hub, and the intrusion protection (locking against unauthorized animals) is mechanically solid.",
+        pros: ["App control & Curfews", "Prevents intruder animals", "Monitors pet comings/goings", "Works with Home Assistant"],
+        cons: ["Requires Hub (sold separately sometimes)", "Expensive setup"],
+        reviews: [
+            {
+                id: "r1", author: "James D.", rating: 5, date: "11 Jan 2026", title: "Best smart home device I own",
+                content: "I love getting a notification when my cat comes home. The curfew mode makes sure he is in before the foxes come out."
+            }
+        ]
     }
 ];
