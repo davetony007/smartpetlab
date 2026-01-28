@@ -1026,5 +1026,122 @@ export const products: Product[] = [
                 content: "I love getting a notification when my cat comes home. The curfew mode makes sure he is in before the foxes come out."
             }
         ]
+    },
+    {
+        id: "enabot-ebo-air-2",
+        name: "Enabot EBO Air 2",
+        category: "camera",
+        price: "£199.00",
+        rating: 4.8,
+        reviewCount: 350,
+        image: "/images/products/enabot-ebo-air-2.jpg",
+        amazonUrl: "https://amzn.to/3NIoOya",
+        description: "Mobile pet robot with 2K camera, night vision, and two-way audio. Patrols your home and plays with your pet.",
+        brand: "Enabot",
+        badge: "Best Robot",
+        specifications: {
+            dimensions: "9.6 x 9.6 x 8.9 cm",
+            weight: "310g",
+            batteryLife: "Self-charging (Auto return to dock)",
+            waterproofRating: "N/A",
+            subscriptionRequired: "No (Local 32GB SD Card included)",
+            connectivity: "2.4GHz + 5GHz WiFi",
+            warranty: "1 Year",
+        },
+        ratingBreakdown: {
+            value: 4.5,
+            battery: 5.0, // Auto charging
+            accuracy: 4.7, // AI Tracking
+            app: 4.6,
+            durability: 4.2, // Mechanical parts
+        },
+        expertVerdict: "The EBO Air 2 is more than just a camera; it's a companion. Unlike fixed cameras, it can follow your pet under the bed or into the kitchen. The 'Auto-Cruise' mode works surprisingly well for security, and the laser pointer feature is a hit with cats. It's the closest thing to actually being home with them.",
+        pros: ["Mobile: No blind spots", "No monthly fees (SD Card)", "Auto-recharge dock", "Built-in Laser Toy"],
+        cons: ["Can get stuck on high thresholds", "Pricey"],
+        reviews: [
+            {
+                id: "r1", author: "Barry P.", rating: 5, date: "12 Feb 2026", title: "Amazing image quality",
+                content: "Wow very impressive and image quality is amazing. Simply when out and about you can keep an eye on your home. The robot travels back to base to charge up automatically."
+            }
+        ]
+    },
+    {
+        id: "fluentpet-basic-kit",
+        name: "FluentPet Basic Vocab Kit",
+        category: "toy",
+        price: "£202.98",
+        rating: 4.8,
+        reviewCount: 450,
+        image: "/images/products/fluentpet-basic-kit.jpg",
+        amazonUrl: "https://amzn.to/3OaiGPd",
+        description: "Set of 12 recordable talking buttons with 6 HexTiles. The ultimate starter kit to teach your pet to communicate needs and feelings.",
+        brand: "FluentPet",
+        badge: "Best for Training",
+        specifications: {
+            dimensions: "HexTiles System",
+            weight: "N/A",
+            batteryLife: "Included (Replaceable)",
+            waterproofRating: "Splashproof",
+            subscriptionRequired: "No",
+            connectivity: "N/A (Standalone Buttons)",
+            warranty: "1 Year",
+        },
+        ratingBreakdown: {
+            value: 4.0,
+            battery: 4.5,
+            accuracy: 4.9, // Button sensitivity
+            app: 1.0, // No app for Basic Kit
+            durability: 4.7,
+        },
+        expertVerdict: "Talking buttons are not a gimmick; they are a cognitive revolution. This Basic Vocab Kit gives you everything you need to start. While it lacks the app tracking of the 'Connect' system, the 12 buttons allow for a surprisingly complex vocabulary (e.g., 'Mom' + 'Play' + 'Now'). Essential for owners who want to deepen their bond.",
+        pros: ["High quality recording/playback", "Modular HexTile system", "Includes 12 buttons", "Community support"],
+        cons: ["Expensive starter price", "No app data logging (Basic model)"],
+        reviews: [
+            {
+                id: "r1", author: "Rimantas B.", rating: 5, date: "24 Jan 2026", title: "Fantastic product",
+                content: "Fantastic product which we use to button train our sphynx cat, they have been able to learn how to ask for treats and to say loving things to us."
+            }
+        ]
+    },
+    {
+        id: "petcube-play-2",
+        name: "Petcube Play 2",
+        category: "camera",
+        price: "£87.99",
+        rating: 3.8, // Adjusted based on mixed feedback but acknowledging it's a popular device
+        reviewCount: 3800,
+        image: "/images/products/petcube-play-2.jpg",
+        amazonUrl: "https://amzn.to/3MbpFa3",
+        description: "Wi-Fi Pet Camera with interactive laser toy. 1080p HD video, 160° full-room view, and 2-way audio.",
+        brand: "Petcube",
+        specifications: {
+            dimensions: "9 x 8 x 8 cm",
+            weight: "600g",
+            batteryLife: "Mains Powered",
+            waterproofRating: "N/A",
+            subscriptionRequired: "Yes (For alerts/history)",
+            connectivity: "2.4GHz + 5GHz WiFi",
+            warranty: "1 Year",
+        },
+        ratingBreakdown: {
+            value: 3.5, // Subscription cost complaints
+            battery: 5.0,
+            accuracy: 4.0, // Laser can be laggy
+            app: 3.5, // Glitchy for some
+            durability: 4.5, // Solid build
+        },
+        expertVerdict: "The Petcube Play 2 is hardware perfection let down slightly by software paywalls. The build quality is premium, the 160-degree view is the widest on the market, and the laser is genuinely fun. However, be aware that to get 'Smart Alerts' or video history, you need a subscription. If you just want live streaming and laser play, it's fantastic value at under £90.",
+        pros: ["Wide 160° angle lens", "Interactive Laser Toy", "Premium design", "Works with Alexa"],
+        cons: ["Heavy push for subscription", "App can be buggy"],
+        reviews: [
+            {
+                id: "r1", author: "Stanislav H.", rating: 2, date: "15 Jan 2026", title: "Great camera, bad service",
+                content: "Good design and excellent image quality, but the paid services are annoying. You can't even download a video without paying extra."
+            },
+            {
+                id: "r2", author: "Dean", rating: 1, date: "10 Jan 2026", title: "Be careful with lasers",
+                content: "Do not use these with dogs, especially working breeds. It can cause compulsion disorder. Cats love it though."
+            }
+        ]
     }
 ];

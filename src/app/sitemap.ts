@@ -45,6 +45,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
         console.error("Error reading guides directory for sitemap:", error);
     }
 
+    // 3. Dynamic Comparisons (from filesystem)
+    const comparisonsDirectory = path.join(process.cwd(), "src/app/comparisons");
+    let comparisonRoutes: MetadataRoute.Sitemap = [];
+
+    try {
+        if (fs.existsSync(comparisonsDirectory)) {
+            const comparisonFolders = fs.readdirSync(comparisonsDirectory).filter((file) => {
+                const filePath = path.join(comparisonsDirectory, file);
+                return fs.statSync(filePath).isDirectory();
+            });
+
+            comparisonRoutes = comparisonFolders.map((slug) => ({
+                url: `${baseUrl}/comparisons/${slug}`,
+                lastModified: new Date(),
+                changeFrequency: "weekly" as const,
+                priority: 0.8,
+            }));
+        }
+    } catch (error) {
+        console.error("Error reading comparisons directory for sitemap:", error);
+    }
+
     // 3. Dynamic Reviews (from data/products.ts)
     const reviewRoutes = products.map((product) => ({
         url: `${baseUrl}/reviews/${product.id}`,
@@ -53,5 +75,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.9,
     }));
 
-    return [...staticRoutes, ...guideRoutes, ...reviewRoutes];
+    return [...staticRoutes, ...guideRoutes, ...comparisonRoutes, ...reviewRoutes];
 }

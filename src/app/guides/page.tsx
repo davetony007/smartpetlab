@@ -87,6 +87,14 @@ const guides = [
         category: "Tech",
         readTime: "15 min read",
         image: "/images/products/smart-home-sensor.jpg",
+    },
+    {
+        slug: "best-smart-pet-toys-2026",
+        title: "Best Smart Pet Toys 2026: Robots, Puzzles & Enrichment",
+        excerpt: "Don't let them get bored. We review the Enabot EBO, FluentPet, and Wickedbone. The best tech to keep your dog or cat entertained.",
+        category: "Reviews",
+        readTime: "10 min read",
+        image: "/images/products/enabot-ebo-air-2.jpg",
     }
 ];
 
